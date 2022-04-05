@@ -5,10 +5,7 @@ import se.yrgo.service.StudentManagementService;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import java.util.List;
 
 @Stateless
@@ -29,6 +26,14 @@ public class StudentResource {
     @Path("{studentNo}")
     public Student findStudentById(@PathParam("studentNo") int id) {
         return service.getById(id);
+    }
+
+    @POST
+    @Produces("application/JSON")
+    @Consumes("application/JSON")
+    public Student createStudent(Student student) {
+        service.registerStudent(student);
+        return student;
     }
 
 }
