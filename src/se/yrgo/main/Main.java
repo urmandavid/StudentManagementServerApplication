@@ -7,6 +7,9 @@ import se.yrgo.service.StudentManagementService;
 import java.util.List;
 
 public class Main {
+    /**
+     * This class and main-method was used before implementing DataAccessObjects and REST.
+     */
 
     public static void main(String[] args) {
         StudentManagementService service = new StudentManagementImplementation();

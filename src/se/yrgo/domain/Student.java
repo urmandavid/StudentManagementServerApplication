@@ -1,14 +1,20 @@
 package se.yrgo.domain;
 
-import java.io.Serializable;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 
 @Entity
 public class Student implements Serializable {
+    /**
+     * Our class Student is used when creating Student objects.
+     * The class contains fields corresponding to each student.
+     *
+     * It also contains Getters, Setters and a toString-method.
+     * The class implements java.io.Serializable.
+     */
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
