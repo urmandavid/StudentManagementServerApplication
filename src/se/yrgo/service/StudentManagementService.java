@@ -9,7 +9,8 @@ import java.util.List;
 @Local
 public interface StudentManagementService {
     /**
-     * This StudentManagementService-interface serves as a bridge between our Server- and Client-code.
+     * This a StudentManagementService-interface.
+     * It serves as a bridge between our Server- and Client-code.
      */
 
     public void registerStudent(Student student);
