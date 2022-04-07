@@ -10,6 +10,7 @@ public interface StudentDataAccess {
     /**
      * This interface is a @Local EJB-class.
      * We add a Data Access Object-layer to our project.
+     *
      * Our ProductionVersion- and TestingVersion-classes implements this interface.
      */
 
